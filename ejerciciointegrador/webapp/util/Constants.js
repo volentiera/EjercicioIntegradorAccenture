@@ -17,7 +17,8 @@ sap.ui.define([], function (){
         paths:{
             northwind: "/v2/northwind/northwind.svc/",
             filters: "/localService/filtros.JSON",
-            I18n: "ejerciciointegrador.i18n.i18n"
+            I18n: "ejerciciointegrador.i18n.i18n",
+            app: "App"
         },
         entity:{
             orders: "/Orders"

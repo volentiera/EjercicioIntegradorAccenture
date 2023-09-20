@@ -13,7 +13,7 @@ function (Controller,JSONModel,Constants, History, ResourceModel, Filter, Filter
             if (sPreviousHash !== undefined){
                 window.history.go(-1);
             }else{
-                this.getOwnerComponent().getRouter().navTo("App", {}, true)
+                this.getOwnerComponent().getRouter().navTo(Constants.paths.app, {}, true)
             }
         },
         getData: function(){
