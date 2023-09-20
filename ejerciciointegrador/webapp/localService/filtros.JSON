@@ -1,0 +1,16 @@
+{
+    "filtros": {
+        "EmployeeID": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "ShipCity": [
+            "México D.F.",
+            "Colchester",
+            "Luleå"
+        ]
+    }
+}

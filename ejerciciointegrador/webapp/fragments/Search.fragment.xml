@@ -1,0 +1,26 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <ComboBox
+        id="employeeComboBox"
+		change="onSearch"
+		placeholder="{i18n>sch-EmployeeIDPlaceholder}"
+        items="{
+        path: 'filterModel>/filtros/EmployeeID'
+    }"
+    >
+        <core:Item text="{filterModel>}" />
+    </ComboBox>
+
+    <ComboBox
+        id="shipCityComboBox"
+		change="onSearch"
+		placeholder="{i18n>sch-ShipCityPlaceholder}"
+        items="{
+        path: 'filterModel>/filtros/ShipCity'
+    }"
+    >
+        <core:Item text="{filterModel>}" />
+    </ComboBox>
+</core:FragmentDefinition>

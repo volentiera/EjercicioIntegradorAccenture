@@ -1,0 +1,48 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Table
+        id="idOrdersTable"
+        inset="false"
+        items="{ path: 'ordersModel>/', sorter: {path: 'CustomerID'}}"
+    >
+        <columns>
+            <Column width="12em">
+                <Text text="{i18n>tab-CustomerID}" />
+            </Column>
+            <Column width="12em">
+                <Text text="{i18n>tab-EmployeeID}" />
+            </Column>
+            <Column width="12em">
+                <Text text="{i18n>tab-ShipCity}" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem
+                type="Active"
+                press="onItemPress"
+                vAlign="Middle"
+            >
+                <cells>
+                    <ObjectIdentifier
+                        title="{ordersModel>CustomerID}"
+                        text="{ordersModel>CustomerID}"
+                    />
+                </cells>
+                <cells>
+                    <ObjectIdentifier
+                        title="{ordersModel>EmployeeID}"
+                        text="{path: 'ordersModel>EmployeeID', formatter: 'ejerciciointegrador.util.Formatter.changeData'}"
+                    />
+                </cells>
+                <cells>
+                    <ObjectIdentifier
+                        title="{ordersModel>ShipCity}"
+                        text="{ordersModel>ShipCity}"
+                    />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>

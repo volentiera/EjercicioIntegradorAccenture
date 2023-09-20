@@ -1,0 +1,22 @@
+<mvc:View controllerName="ejerciciointegrador.controller.Orders"
+    xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox justifyContent="Center"  alignContent="Center">
+            <core:Fragment
+                type="XML"
+                fragmentName="ejerciciointegrador.fragments.Nav"
+            />
+            <core:Fragment
+                type="XML"
+                fragmentName="ejerciciointegrador.fragments.orders.title"
+            />
+            <core:Fragment
+                type="XML"
+                fragmentName="ejerciciointegrador.fragments.orders.orders"
+            />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
